@@ -31,7 +31,7 @@ CREATE TABLE "Campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
     "company_name" varchar(50)   NOT NULL,
-    "description" varchar(50)   NOT NULL,
+    "description" varchar(100)   NOT NULL,
     "goal" float   NOT NULL,
     "pledged" float   NOT NULL,
     "outcome" varchar(20)   NOT NULL,
