@@ -1,27 +1,6 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-
-CREATE TABLE "Campaign" (
-    "cf_id" int   NOT NULL,
-    "contact_id" int   NOT NULL,
-    "company_name" varchar(50)   NOT NULL,
-    "description" varchar(50)   NOT NULL,
-    "goal" float   NOT NULL,
-    "pledged" float   NOT NULL,
-    "outcome" varchar(20)   NOT NULL,
-    "backers_count" int   NOT NULL,
-    "country" varchar(5)   NOT NULL,
-    "currency" varchar(5)   NOT NULL,
-    "launch_date" date   NOT NULL,
-    "end_date" date   NOT NULL,
-    "category_id" varchar(10)   NOT NULL,
-    "subcategory_id" varchar(10)   NOT NULL,
-    CONSTRAINT "pk_Campaign" PRIMARY KEY (
-        "cf_id"
-     )
-);
-
 CREATE TABLE "Category" (
     "category_id" string   NOT NULL,
     "category" varchar(20)   NOT NULL,
@@ -45,6 +24,26 @@ CREATE TABLE "Subcategory" (
     "subcategory" varchar(20)   NOT NULL,
     CONSTRAINT "pk_Subcategory" PRIMARY KEY (
         "subcategory_id"
+     )
+);
+
+CREATE TABLE "Campaign" (
+    "cf_id" int   NOT NULL,
+    "contact_id" int   NOT NULL,
+    "company_name" varchar(50)   NOT NULL,
+    "description" varchar(50)   NOT NULL,
+    "goal" float   NOT NULL,
+    "pledged" float   NOT NULL,
+    "outcome" varchar(20)   NOT NULL,
+    "backers_count" int   NOT NULL,
+    "country" varchar(5)   NOT NULL,
+    "currency" varchar(5)   NOT NULL,
+    "launch_date" date   NOT NULL,
+    "end_date" date   NOT NULL,
+    "category_id" varchar(10)   NOT NULL,
+    "subcategory_id" varchar(10)   NOT NULL,
+    CONSTRAINT "pk_Campaign" PRIMARY KEY (
+        "cf_id"
      )
 );
 
