@@ -2,7 +2,7 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 CREATE TABLE "Category" (
-    "category_id" string   NOT NULL,
+    "category_id" varchar(10)   NOT NULL,
     "category" varchar(20)   NOT NULL,
     CONSTRAINT "pk_Category" PRIMARY KEY (
         "category_id"
