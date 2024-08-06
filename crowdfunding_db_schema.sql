@@ -20,7 +20,7 @@ CREATE TABLE "Contacts" (
 );
 
 CREATE TABLE "Subcategory" (
-    "subcategory_id" string   NOT NULL,
+    "subcategory_id" varchar(10)   NOT NULL,
     "subcategory" varchar(20)   NOT NULL,
     CONSTRAINT "pk_Subcategory" PRIMARY KEY (
         "subcategory_id"
